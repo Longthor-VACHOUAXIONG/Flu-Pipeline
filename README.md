@@ -1,0 +1,41 @@
+# 🧬 Influenza Sequencing Workflow
+**Developed by: Longthor VACHOUAXIONG**  
+*© 2026 LONGTHOR VACHOUAXIONG | All Rights Reserved.*
+
+---
+
+## 📋 Overview
+A fully automated bioinformatics pipeline for Nanopore Influenza sequencing. This tool automates the process from raw FASTQ data to subtyping, consensus generation, multiple sequence alignment, and phylogenetic tree building.
+
+## 🚀 Quick Start
+1. **Prepare Data**: Place your raw Nanopore folders in a directory named `fastq_pass`.
+2. **Metadata**: Fill in the `metadata.xlsx` file with your barcode-to-sample mapping.
+3. **Run**: Type `flu-pipeline` in your terminal.
+
+---
+
+## 🛠️ Installation
+To install the pipeline on your Linux/WSL system, you only need to run a single command! 
+
+Open your terminal and paste this command exactly as it appears:
+```bash
+wget -qO pipeline.zip "https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/releases/download/v1.2/Influenza_Pipeline_Secure_v1.2.zip" && unzip -q pipeline.zip -d flu_install && cd flu_install && sudo ./install.sh && cd .. && rm -rf flu_install pipeline.zip
+```
+
+### What this does:
+1. Securely downloads the pipeline from the official repository.
+2. Extracts and installs it globally as a system command (`flu-pipeline`).
+3. Automatically deletes all installation files to keep your workspace perfectly clean.
+
+---
+
+## 📦 Requirements
+* **Conda**: The pipeline will automatically install IRMA, MAFFT, and IQ-TREE inside a conda environment named `irma` during the first run.
+* **Python**: Requires Python 3.10+ with `openpyxl` and `pandas`.
+
+## 📂 Results
+All results are organized in the `results_irma` folder:
+* `03_consensus`: Reconstructed genomic segments.
+* `05_alignment`: Multiple sequence alignments.
+* `06_trees`: Phylogenetic trees for each segment.
+* `metadata.xlsx`: Automatically updated with read counts and genomic coverage.
