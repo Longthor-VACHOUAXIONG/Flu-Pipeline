@@ -19,7 +19,7 @@ To install the pipeline on your Linux/WSL system, you only need to run a single 
 
 Open your terminal and paste this command exactly as it appears:
 ```bash
-wget -qO pipeline.zip "https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/releases/download/v1.2/Influenza_Pipeline_Secure_v1.2.zip" && unzip -q pipeline.zip -d flu_install && cd flu_install && sudo ./install.sh && cd .. && rm -rf flu_install pipeline.zip
+wget -qO pipeline.zip "https://raw.githubusercontent.com/Longthor-VACHOUAXIONG/Flu-Pipeline/main/Influenza_Pipeline_Secure_v1.2.zip" && unzip -q pipeline.zip -d flu_install && cd flu_install && sudo ./install.sh && cd .. && rm -rf flu_install pipeline.zip
 ```
 
 ### What this does:
