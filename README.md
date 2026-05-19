@@ -39,3 +39,10 @@ All results are organized in the `results_irma` folder:
 * `05_alignment`: Multiple sequence alignments.
 * `06_trees`: Phylogenetic trees for each segment.
 * `metadata.xlsx`: Automatically updated with read counts and genomic coverage.
+
+---
+
+## 🛠️ Troubleshooting
+**Issue: I installed the pipeline, but running it prints random gibberish (e.g., `?!ɀM43...`)**
+* **Cause**: You likely downloaded an older, corrupted cached version of the pipeline.
+* **Solution**: Re-run the installation command above. If it still fails, simply change `?v=stable` at the end of the URL to a random number like `?v=99` to bypass your network's cache, and install it again.
