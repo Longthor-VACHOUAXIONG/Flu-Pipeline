@@ -1,6 +1,6 @@
 # 🧬 Influenza Sequencing Workflow
 **Developed by: Longthor VACHOUAXIONG**  
-*© 2026 LONGTHOR VACHOUAXIONG | All Rights Reserved.*
+*© 2026 | LONGTHOR VACHOUAXIONG | All Rights Reserved.*
 
 ---
 
