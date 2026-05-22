@@ -32,6 +32,7 @@ done > .references/combined_flu_reference.fasta 2>/dev/null
 
 # 4. Copy files to the permanent system directory
 echo "▶ Installing workflow components..."
+rm -rf "$INSTALL_DIR/.references"
 cp -r .references "$INSTALL_DIR/"
 cp -r .scripts "$INSTALL_DIR/"
 cp "$PIPE_SRC" "$INSTALL_DIR/flu-pipeline.exec"
