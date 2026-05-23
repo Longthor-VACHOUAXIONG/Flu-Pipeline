@@ -79,8 +79,5 @@ echo ""
 echo "Just put your metadata.xlsx in your working directory and run."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Self-delete the installer script and clean up entire package directory
-SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+# Self-delete the installer script
 rm -f "$0"
-cd /tmp
-rm -rf "$SCRIPT_DIR"
