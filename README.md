@@ -34,7 +34,7 @@ wget -qO- https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/hea
 1. Downloads the latest version from GitHub
 2. Extracts the secure package
 3. Runs the one-click installer
-4. Cleans up temporary files
+4. Automatically deletes all downloaded and extracted files
 5. Ready to use immediately: `flu-pipeline --help`
 
 ### Manual Installation

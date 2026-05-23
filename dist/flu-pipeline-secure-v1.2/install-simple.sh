@@ -65,6 +65,8 @@ echo "▶ Cleaning up installation files..."
 rm -rf .references .scripts
 rm -f run_flu_irma_pipeline.sh run_flu_irma_pipeline.sh.x
 rm -f metadata.xlsx
+rm -f INSTALL.md README.md SECURE_README.md
+rm -f install.bat uninstall.sh uninstall.bat
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "✅ Installation Complete!"
@@ -77,5 +79,7 @@ echo ""
 echo "Just put your metadata.xlsx in your working directory and run."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Self-delete the installer script
+# Self-delete the installer script and clean up entire package directory
 rm -f "$0"
+cd ..
+rm -rf "$(dirname "$0")"
