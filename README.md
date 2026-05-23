@@ -21,13 +21,13 @@ A fully automated bioinformatics pipeline for Nanopore Influenza sequencing. Thi
 Download and install in one command:
 
 ```bash
-curl -L https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd /tmp
+curl -L https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd -
 ```
 
 Or with wget:
 
 ```bash
-wget -qO- https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd /tmp
+wget -qO- https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd -
 ```
 
 ### What this does:
