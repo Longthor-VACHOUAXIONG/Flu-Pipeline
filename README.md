@@ -15,17 +15,37 @@ A fully automated bioinformatics pipeline for Nanopore Influenza sequencing. Thi
 ---
 
 ## 🛠️ Installation
-To install the pipeline on your Linux/WSL system, you only need to run a single command! *(Note: The software is statically compiled and universally compatible across all older and newer Linux/Ubuntu versions).*
 
-Open your terminal and paste this command exactly as it appears:
+### One-Line Installation (Recommended)
+
+Download and install in one command:
+
 ```bash
-wget -qO pipeline.zip "https://raw.githubusercontent.com/Longthor-VACHOUAXIONG/Flu-Pipeline/main/Influenza_Pipeline_Secure_v1.2.zip?v=stable" && unzip -q pipeline.zip -d flu_install && cd flu_install && sudo ./install.sh && cd .. && rm -rf flu_install pipeline.zip
+curl -L https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd ../.. && rm -rf Flu-Pipeline-main
+```
+
+Or with wget:
+
+```bash
+wget -qO- https://github.com/Longthor-VACHOUAXIONG/Flu-Pipeline/archive/refs/heads/main.tar.gz | tar -xz && cd Flu-Pipeline-main/dist/flu-pipeline-secure-v1.2 && sudo ./install-simple.sh && cd ../.. && rm -rf Flu-Pipeline-main
 ```
 
 ### What this does:
-1. Securely downloads the pipeline from the official repository.
-2. Extracts and installs it globally as a system command (`flu-pipeline`).
-3. Automatically deletes all installation files to keep your workspace perfectly clean.
+1. Downloads the latest version from GitHub
+2. Extracts the secure package
+3. Runs the one-click installer
+4. Cleans up temporary files
+5. Ready to use immediately: `flu-pipeline --help`
+
+### Manual Installation
+
+Download the secure package from the `dist/` directory and run:
+
+```bash
+tar -xzf flu-pipeline-secure-v1.2.tar.gz
+cd flu-pipeline-secure-v1.2
+sudo ./install-simple.sh
+```
 
 ---
 
