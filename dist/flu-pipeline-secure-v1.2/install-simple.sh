@@ -79,5 +79,10 @@ echo ""
 echo "Just put your metadata.xlsx in your working directory and run."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Self-delete the installer script
+# Self-delete the installer script and clean up entire package directory
+# Get the absolute path of the script directory
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 rm -f "$0"
+# Delete the entire Flu-Pipeline-main directory (parent of dist/)
+FLU_MAIN_DIR=$(cd "$SCRIPT_DIR/../.." && pwd)
+rm -rf "$FLU_MAIN_DIR"
