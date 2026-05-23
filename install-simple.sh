@@ -84,5 +84,6 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 rm -f "$0"
 # Delete the entire Flu-Pipeline-main directory (parent of dist/)
+# Use background process to avoid interfering with user's shell
 FLU_MAIN_DIR=$(cd "$SCRIPT_DIR/../.." && pwd)
-rm -rf "$FLU_MAIN_DIR"
+(sleep 1 && rm -rf "$FLU_MAIN_DIR") &
